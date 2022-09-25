@@ -25,7 +25,7 @@ function App() {
 
   return (
     <div>
-      <h2>Let's Start</h2>
+      <h2>Let's get Started</h2>
 
       <ExpenseItem
         title={expenses[0].title}
@@ -41,6 +41,11 @@ function App() {
         title={expenses[2].title}
         amount={expenses[2].amount}
         date={expenses[2].date}
+      />
+      <ExpenseItem
+        title={expenses[3].title}
+        amount={expenses[3].amount}
+        date={expenses[3].date}
       />
     </div>
   );
