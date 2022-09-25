@@ -1,3 +1,4 @@
+import React from "react";
 import "./Card.css";
 
 // 래퍼 컴포넌트

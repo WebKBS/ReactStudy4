@@ -1,3 +1,4 @@
+import React from "react";
 import Expenses from "./components/Expenses";
 
 function App() {
@@ -23,12 +24,20 @@ function App() {
     },
   ];
 
-  return (
-    <div>
-      <h2>Let's get Started</h2>
-      <Expenses items={expenses} />
-    </div>
+  // 만약 리액트 코드로 변환 한다면?
+  return React.createElement(
+    "div",
+    {},
+    React.createElement("h2", {}, "Let's get started"),
+    React.createElement(Expenses, { items: expenses })
   );
+
+  // return (
+  //   <div>
+  //     <h2>Let's get Started</h2>
+  //     <Expenses items={expenses} />
+  //   </div>
+  // );
 }
 
 export default App;
